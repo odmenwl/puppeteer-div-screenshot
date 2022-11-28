@@ -1,0 +1,24 @@
+{
+  "name": "puppeteer-div-screenshot",
+  "version": "1.0.0",
+  "description": "Example of how to take a screenshot of each HTML block using puppeteer and sharp",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "Volodymyr Kasap (mailto:vk26vk@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^19.2.2",
+    "sharp": "^0.31.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/puppeteer": "^7.0.4",
+    "@types/sharp": "^0.31.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.3"
+  }
+}
