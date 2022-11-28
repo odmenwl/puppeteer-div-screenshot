@@ -1,6 +1,7 @@
 import { join } from 'path';
 import sharp from 'sharp';
 import { IBlockModel } from './intefaces/block-model.interface';
+import { getFileName } from './get-file-name';
 
 
 export async function extractImages (screenshot: Buffer | string, blockModels: IBlockModel[], directory: string) {
@@ -14,7 +15,7 @@ export async function extractImages (screenshot: Buffer | string, blockModels: I
             top: Math.round(box.top),
             left: Math.round(box.left),
           })
-          .toFile(join(directory, `${box.title}-${index}.jpg`));
+          .toFile(join(directory, `${getFileName(box.title)}-${index}.jpg`));
       })
     );
   } catch (e) {
